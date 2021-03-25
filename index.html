@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Memory Game!</h1>
+    
+    <p>
+      <a> Welcome to the light and sound memory game! Repeat back the pattern by pressing the correct buttons.</a>
+    </p>
+    
+    <button onclick="startGame()" id="startBtn">
+      Start</button>
+    <button class="hidden" onclick="stopGame()" id="stopBtn">
+      Stop</button>
+    
+    <div id="gameButtonArea">
+      <button onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()" id="button1"></button>
+      <button onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()" id="button2"></button>
+      <button onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()" id="button3"></button>
+      <button onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()" id="button4"></button>
+    </div>
+
+  </body>
+</html>
